@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript 1</title>
+
+        <script>
+
+            function ejecuta(){
+                document.getElementsByTagName("p")[0].onclick=alerta;
+            }
+            function alerta(){
+                alert("Hola que hay de nuevo");
+            }
+
+            window.onload=ejecuta;
+        </script>
+
+        <style>
+            .importante{
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>Estamos con javascript a tope !!</p>
+        <p class="importante">Estamos con javascript a tope IMPORTANTE !!</p>
+    </body>
+</html> 

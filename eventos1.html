@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Eventos</title>
+
+        <script>
+
+            var imagen
+            function tipo(){
+                alert("Alerta lanzada");
+            }
+
+            function ejecuta(){
+                //document.getElementsByTagName("img")[0].onclick=tipo;
+                imagen = document.getElementsByTagName("img")[0];
+                imagen.addEventListener("mouseover",crecer,false);
+                imagen.addEventListener("mouseout",menguar,false);
+            }
+
+            function menguar(){
+                imagen.width=225;
+                imagen.height=225;
+            }
+
+            function crecer(){
+                imagen.width=500;
+                imagen.height=500;
+            }
+
+            window.onload=ejecuta;
+
+        </script>
+    </head>
+    <body>
+        <p><img src="imagenes/Imagen1.JPG"></p>
+    </body>
+</html>
