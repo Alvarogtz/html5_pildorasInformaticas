@@ -7,18 +7,36 @@
         <style>
             #principal{
                 width: 500px;
-                background-color: blue;
+                /*background-color: blue;*/
                 text-align: center;
                 margin: 15px auto;
                 padding: 15px;
                 border: 3px solid red;
                 border-radius: 10px;
                 box-shadow: grey 10px 5px 10px;
+                background: -webkit-linear-gradient(top,blue,rgb(57, 174, 252));
+                background: -moz-radial-gradient(center,circle,red,rgb(200, 252, 57));
+                /*outline: 10px dashed blue;
+                outline-offset: 5px;
+                -webkit-transform: scale(0.5);
+                -webkit-transform: rotate(180deg);
+                -webkit-transform: skew(30deg);*/
+                -webkit-transition:-webkit-transform 1s ease 0.5s;
+            }
+
+            #principal:hover{
+                -webkit-transform: skew(30deg);
+            }
+
+            @font-face {
+                font-family: 'MiPropiaFuente';
+                src: url("fonts/RubikGlitch-Regular.ttf");
             }
 
             #titulo{
-                font:bold 36px Verdana,Geneva,sans-serif;
-                text-shadow: yellow 3px 3px 5px;
+                font:bold 36px "MiPropiaFuente";
+                /*text-shadow: yellow 3px 3px 5px;*/
+                color: rgba(0, 0, 0, 0.5);
                 
             }
         </style>
